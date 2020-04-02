@@ -4,7 +4,7 @@
   "name": "site_boilerplate_classic_webpack",
   "version": "1.0.0",
   "description": "Training site",
-  "homepage": "https://pk007pk.github.io/P10MPClassicWebpack/",
+  "homepage": "https://pk007pk.github.io/P12MpFinClassicWebpack/",
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
