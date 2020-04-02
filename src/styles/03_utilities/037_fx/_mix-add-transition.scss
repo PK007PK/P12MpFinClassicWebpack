@@ -1,0 +1,14 @@
+/**** Overwrite default variables and custom projekt stylling ****/
+/**** Default properties ****/
+
+$default-transition: all 1s !default;
+$default-taiming: cubic-bezier(0.075, 0.82, 0.165, 1) !default;
+
+/**** Core component ****/
+@mixin add-transition(
+  $transition: $default-transition,
+  $transition-timing-function: $default-taiming
+) {
+  transition: $transition;
+  transition-timing-function: $transition-timing-function;
+}

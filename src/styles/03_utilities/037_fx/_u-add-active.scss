@@ -1,0 +1,5 @@
+.u-add-def-active {
+  &:active {
+    @include add-active();
+  }
+}

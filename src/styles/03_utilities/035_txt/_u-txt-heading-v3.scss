@@ -1,0 +1,67 @@
+.u-txt-heading-1 {
+  @include add-font-size-in-media-queries(
+    $base--heading-1--font-size-phone,
+    $base--heading-1--font-size-tablet,
+    $base--heading-1--font-size-desktop
+  );
+  margin: 0;
+  font-family: $base--heading-1--font-family;
+  font-style: $base--heading-1--font-style;
+  font-weight: $base--heading-1--font-weight;
+  letter-spacing: $base--heading-1--letter-spacing;
+  line-height: $base--heading-1--line-height;
+  text-transform: $base--heading-1--text-transform;
+  color: $headings--h1--color;
+}
+
+.u-txt-heading-2 {
+  @include add-font-size-in-media-queries(
+    $base--heading-2--font-size-phone,
+    $base--heading-2--font-size-tablet,
+    $base--heading-2--font-size-desktop
+  );
+  margin: 0;
+  font-family: $base--heading-2--font-family;
+  font-style: $base--heading-2--font-style;
+  font-weight: $base--heading-2--font-weight;
+  letter-spacing: $base--heading-2--letter-spacing;
+  line-height: $base--heading-2--line-height;
+  text-transform: $base--heading-2--text-transform;
+  color: $headings--h2--color;
+}
+
+.u-txt-heading-3 {
+  font-family: $base--heading-3--font-family;
+  font-size: $base--heading-3--font-size;
+  font-style: $base--heading-3--font-style;
+  font-weight: $base--heading-3--font-weight;
+  letter-spacing: $base--heading-3--letter-spacing;
+  line-height: $base--heading-3--line-height;
+  text-transform: $base--heading-3--text-transform;
+  color: $headings--h3--color;
+  margin: 0;
+}
+
+.u-txt-heading-4 {
+  font-family: $base--heading-4--font-family;
+  font-size: $base--heading-4--font-size;
+  font-style: $base--heading-4--font-style;
+  font-weight: $base--heading-4--font-weight;
+  letter-spacing: $base--heading-4--letter-spacing;
+  line-height: $base--heading-4--line-height;
+  text-transform: $base--heading-4--text-transform;
+  color: $headings--h4--color;
+  margin: 0;
+}
+
+.u-txt-heading-5 {
+  font-family: $base--heading-5--font-family;
+  font-size: $base--heading-5--font-size;
+  font-style: $base--heading-5--font-style;
+  font-weight: $base--heading-5--font-weight;
+  letter-spacing: $base--heading-5--letter-spacing;
+  line-height: $base--heading-5--line-height;
+  text-transform: $base--heading-5--text-transform;
+  color: $headings--h5--color;
+  margin: 0;
+}

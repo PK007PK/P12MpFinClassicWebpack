@@ -1,0 +1,23 @@
+// * Component
+.u-txt-paragraph--primary {
+  font-family: $base--body--font-family;
+  font-style: $base--body--font-style;
+  font-weight: $base--body--font-weight;
+  letter-spacing: $base--body--letter-spacing;
+  line-height: $base--body--line-height;
+  text-transform: $base--body--text-transform;
+  // color: $text--p--color;
+  margin: 0;
+}
+
+.u-txt-paragraph--secondary {
+  font-family: $base--body-2--font-family;
+  font-size: $base--body-2--font-size;
+  font-style: $base--body-2--font-style;
+  font-weight: $base--body-2--font-weight;
+  letter-spacing: $base--body-2--letter-spacing;
+  line-height: $base--body-2--line-height;
+  text-transform: $base--body-2--text-transform;
+  // color: $txt-paragraph--sec--color;
+  margin: 0;
+}

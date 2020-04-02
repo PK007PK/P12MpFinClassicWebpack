@@ -1,0 +1,90 @@
+.c-tile {
+  // * Overwrite default values
+  $tile--body--color-text: $color-blue-100;
+  $tile--body--color-text-hover: $color-red-100;
+
+  // * Default variables
+  // ** Default main variables
+  // $accordion--focus--color: $base--focus--color !default;
+
+  // $tile--heading--color-text: $base--heading--color-text !default;
+  // $tile--heading--color-text-hover: $base--heading--color-text-hover !default;
+  // $tile--heading--color-text-active: $base--heading--color-text-active !default;
+  // $tile--heading--color-text-active-hover: $base--heading--color-text-active-hover !default;
+  // $tile--heading--color-background: $base--heading--color-background !default;
+  // $tile--heading--color-background-hover: $base--heading--color-background-hover !default;
+  // $tile--heading--color-background-active: $base--heading--color-background-active !default;
+  // $tile--heading--color-background-active-hover: $base--heading--color-background-active-hover !default;
+
+  $tile--body--color-text: $base--body--color-text !default;
+  $tile--body--color-text-hover: $base--body--color-text-hover !default;
+  // $tile--body--color-text-active: $base--body--color-text-active !default;
+  // $tile--body--color-text-active-hover: $base--body--color-text-active-hover !default;
+  $tile--body--color-background: $base--body--color-background !default;
+  $tile--body--color-background-hover: $base--body--color-background-hover !default;
+  // $tile--body--color-background-active: $base--body--color-background-active !default;
+  // $tile--body--color-background-active-hover: $base--body--color-background-active-hover !default;
+
+  // $tile--icon--color-text: $base--icon--color-text !default;
+  // $tile--icon--color-text-hover: $base--icon--color-text-hover !default;
+  // $tile--icon--color-text-active: $base--icon--color-text-active !default;
+  // $tile--icon--color-text-active-hover: $base--icon--color-text-active-hover !default;
+  // $tile--icon--color-background: $base--icon--color-background !default;
+  // $tile--icon--color-background-hover: $base--icon--color-background-hover !default;
+  // $tile--icon--color-background-active: $base--icon--color-background-active !default;
+  // $tile--icon--color-background-active-hover: $base--icon--color-background-active-hover !default;
+
+  // ** Default local variables
+  $tile--body--paddings: 20px;
+  $tile--body--height: 340px;
+  $tile--title-text--space: 30px;
+
+  // * Component
+  @include add-shadow-box;
+  @include add-transition;
+  @include add-com-border;
+  color: $tile--body--color-text;
+  background-color: $tile--body--color-background;
+  padding: $tile--body--paddings;
+  height: $tile--body--height;
+
+  margin: 5px;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__title {
+    @include add-txt-com-heading;
+  }
+
+  &__text {
+    @include add-txt-com-body;
+  }
+
+  // &:hover {
+  //   @include add-default-shadow-hover;
+  //   color: $tile--body--color-text-hover;
+  //   background-color: $tile--body--color-background-hover;
+  // }
+
+  &:focus {
+    background-color: $color-yellow-300 !important;
+    background-image: none !important;
+    color: $color-kale-800;
+  }
+  &:hover {
+    background-color: $color-yellow-300 !important;
+    background-image: none !important;
+    color: $color-kale-800;
+  }
+}
+
+a:focus .c-tile {
+  background-color: $color-yellow-300 !important;
+  background-image: none !important;
+  color: $color-kale-800;
+}

@@ -1,0 +1,40 @@
+/**** Overwrite default variables and custom projekt stylling ****/
+
+/**** Default properties ****/
+
+/**** Core component ****/
+@mixin add-resp-height(
+  $tiny-height,
+  $tiny-max-height,
+  $xs-height,
+  $xs-max-height,
+  $sm-height,
+  $sm-max-height,
+  $md-height,
+  $md-max-height,
+  $lg-height,
+  $lg-max-height
+) {
+  height: $tiny-height;
+  max-height: $tiny-max-height;
+
+  @include respond-above(xs) {
+    height: $xs-height;
+    max-height: $xs-max-height;
+  }
+
+  @include respond-above(sm) {
+    height: $sm-height;
+    max-height: $sm-max-height;
+  }
+
+  @include respond-above(md) {
+    height: $md-height;
+    max-height: $md-max-height;
+  }
+
+  @include respond-above(lg) {
+    height: $lg-height;
+    max-height: $lg-max-height;
+  }
+}

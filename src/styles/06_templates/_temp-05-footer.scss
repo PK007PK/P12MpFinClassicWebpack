@@ -1,0 +1,14 @@
+.temp-05-footer {
+  &__inner {
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    max-width: 1084px;
+    justify-content: center;
+
+    @include respond-above(sm) {
+      justify-content: flex-end;
+    }
+  }
+}

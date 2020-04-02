@@ -1,0 +1,15 @@
+.temp-00-standarized-section-container {
+  @include section-100vh-height();
+
+  &__inner {
+    background-color: gray;
+    @include resp-section-padding();
+
+    @include respond-above(xxl) {
+      height: 100%;
+      // background-image: url('images/images/sec-01-back-lg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

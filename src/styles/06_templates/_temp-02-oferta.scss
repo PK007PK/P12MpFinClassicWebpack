@@ -1,0 +1,54 @@
+.temp-02-oferta {
+  color: white;
+
+  &__inner {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @include respond-above(md) {
+      width: 1084px;
+      height: 350px;
+      flex-wrap: nowrap;
+    }
+
+    i {
+      display: none;
+
+      @include respond-above(sm) {
+        @include add-shadow-txt;
+        display: block;
+        font-size: 10rem;
+        text-align: center;
+        color: $color-red;
+        margin: 50px auto;
+      }
+
+      @include respond-above(md) {
+        width: 324px;
+      }
+    }
+  }
+
+  &__txt-block {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px 25px;
+
+    @include respond-above(md) {
+      width: 760px;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+}

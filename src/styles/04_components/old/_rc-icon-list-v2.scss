@@ -1,0 +1,23 @@
+.c-icon-list {
+  //Overwrite default values:
+
+  //Default values:
+  $icon: 'images/DefaultComponentsAssets/arrowblue.png' !default;
+
+  //Component body:
+  list-style-image: url($icon);
+
+  &__item {
+    line-height: 1.5;
+  }
+}
+
+/*
+
+<ul class="c-icon-list">
+  <li class="c-icon-list__item">Abc</li>
+  <li class="c-icon-list__item">Def</li>
+  <li class="c-icon-list__item">Ghi</li>
+</ul>
+
+*/

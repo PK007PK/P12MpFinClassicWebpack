@@ -1,0 +1,137 @@
+.c-accordion {
+  // * Overwrite default values
+
+  // * Default variables
+  // ** Default main variables
+  // $accordion--focus--color: $base--focus--color !default;
+
+  // $accordion--heading--color-text: $base--heading--color-text !default;
+  // $accordion--heading--color-text-hover: $base--heading--color-text-hover !default;
+  // $accordion--heading--color-text-active: $base--heading--color-text-active !default;
+  // $accordion--heading--color-text-active-hover: $base--heading--color-text-active-hover !default;
+  // $accordion--heading--color-background: $base--heading--color-background !default;
+  // $accordion--heading--color-background-hover: $base--heading--color-background-hover !default;
+  // $accordion--heading--color-background-active: $base--heading--color-background-active !default;
+  // $accordion--heading--color-background-active-hover: $base--heading--color-background-active-hover !default;
+
+  $accordion--body--color-text: $base--body--color-text !default;
+  $accordion--body--color-text-hover: $base--body--color-text-hover !default;
+  $accordion--body--color-text-active: $base--body--color-text-active !default;
+  $accordion--body--color-text-active-hover: $base--body--color-text-active-hover !default;
+  $accordion--body--color-background: $base--body--color-background !default;
+  $accordion--body--color-background-hover: $base--body--color-background-hover !default;
+  $accordion--body--color-background-active: $base--body--color-background-active !default;
+  $accordion--body--color-background-active-hover: $base--body--color-background-active-hover !default;
+
+  // $accordion--icon--color-text: $base--icon--color-text !default;
+  // $accordion--icon--color-text-hover: $base--icon--color-text-hover !default;
+  // $accordion--icon--color-text-active: $base--icon--color-text-active !default;
+  // $accordion--icon--color-text-active-hover: $base--icon--color-text-active-hover !default;
+  $accordion--icon--color-background: $base--icon--color-background !default;
+  $accordion--icon--color-background-hover: $base--icon--color-background-hover !default;
+  $accordion--icon--color-background-active: $base--icon--color-background-active !default;
+  // $accordion--icon--color-background-active-hover: $base--icon--color-background-active-hover !default;
+
+  $accordion--body--border-radious: 50px !default;
+  $accordion--body--max-width: 350px !default;
+
+  // ** Default local variables
+  $accordion--icon--symbol: 'images/DefaultComponentsAssets/arrow.png' !default;
+
+  // * Component
+  @include add-transition;
+  @include add-shadow-box;
+  @include add-com-border;
+  @include add-txt-com-heading;
+
+  position: relative;
+  border-radius: $accordion--body--border-radious;
+  max-width: $accordion--body--max-width;
+  background-color: $accordion--body--color-background;
+  color: $accordion--body--color-text;
+  padding: 1.2rem 0 1.2rem 5rem;
+
+  &:focus {
+    @include add-focus;
+  }
+
+  &:active {
+    @include add-active;
+  }
+
+  &:hover {
+    @include add-shadow-box-hover;
+    color: $accordion--body--color-text-hover;
+    background-color: $accordion--body--color-background-hover;
+
+    &::before {
+      @include add-transition;
+      transform: translate(0, -50%) rotate(90deg);
+      background-color: $accordion--icon--color-background-hover;
+    }
+  }
+
+  //Accordion icon:
+  &::before {
+    @include add-transition;
+    content: '';
+    position: absolute;
+
+    top: 50%;
+    left: 6px;
+    width: 35px;
+    height: 35px;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+
+    background-color: $accordion--icon--color-background;
+    background-image: url($accordion--icon--symbol);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20%;
+  }
+
+  //Accordion active:
+  &--active {
+    background-color: $accordion--body--color-background-active;
+    color: $accordion--body--color-text-active;
+
+    &:hover {
+      background-color: $accordion--body--color-background-active-hover;
+      color: $accordion--body--color-text-active-hover;
+    }
+
+    //Accordion active icon:
+    &::before {
+      transform: translate(0, -50%) rotate(90deg);
+      background-color: $accordion--icon--color-background-active;
+    }
+  }
+}
+
+/* Html structure: 
+
+<h4 class="c-accordion c-accordion--active">
+  Heart Treatment
+</h4>
+<p>
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
+  blanditiis eveniet mollitia error quos! Odio, perferendis
+  repellendus consequuntur possimus velit adipisci voluptatum
+  debitis hic pariatur.
+</p>
+<h4 class="c-accordion">Heart Treatment</h4>
+<p class="u-display-none">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+  maxime sed veritatis, sint deleniti corrupti aperiam nulla
+  vitae, odio tempore, laudantium blanditiis ut placeat.
+  Accusamus?
+</p>
+<h4 class="c-accordion">Heart Treatment</h4>
+<p class="u-display-none">
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+  Suscipit fugiat enim dolores odit deserunt. Quod autem, aliquid
+  suscipit aliquam eum nihil a voluptatum porro quam!
+</p>
+
+*/

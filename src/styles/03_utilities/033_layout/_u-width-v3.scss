@@ -1,0 +1,32 @@
+/* Usage: 
+
+
+
+*/
+
+@mixin create_width_classes {
+  $value: 5;
+  @for $i from 1 through 20 {
+    $percvalue: $value * 1%;
+
+    .u-width--#{$value} {
+      width: #{$percvalue};
+    }
+    $value: $value + 5;
+  }
+
+  @each $key, $val in $breakpoints {
+    $value: 5;
+    @for $i from 1 through 20 {
+      $percvalue: $value * 1%;
+
+      .u-width--#{$key}-#{$value} {
+        @include respond-above($key) {
+          width: #{$percvalue};
+        }
+      }
+      $value: $value + 5;
+    }
+  }
+}
+@include create_width_classes;

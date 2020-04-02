@@ -1,0 +1,59 @@
+.c-btn {
+  //Overwrite default values and local styling:
+
+  //Default main values:
+  // $accordion--focus--color: $base--focus--color !default;
+
+  $btn--body--color-text: $base--body--color-text !default;
+  $btn--body--color-text-hover: $base--body--color-text-hover !default;
+  // $btn--body--color-text-active: $base--body--color-text-active !default;
+  // $btn--body--color-text-active-hover: $base--body--color-text-active-hover !default;
+  $btn--body--color-background: $base--body--color-background !default;
+  $btn--body--color-background-hover: $base--body--color-background-hover !default;
+  // $btn--body--color-background-active: $base--body--color-background-active !default;
+  // $btn--body--color-background-active-hover: $base--body--color-background-active-hover !default;
+  // $btn--icon--color-text: $base--icon--color-text !default;
+  // $btn--icon--color-text-hover: $base--icon--color-text-hover !default;
+  // $btn--icon--color-text-active: $base--icon--color-text-active !default;
+  // $btn--icon--color-text-active-hover: $base--icon--color-text-active-hover !default;
+  // $btn--icon--color-background: $base--icon--color-background !default;
+  // $btn--icon--color-background-hover: $base--icon--color-background-hover !default;
+  // $btn--icon--color-background-active: $base--icon--color-background-active !default;
+  // $btn--icon--color-background-active-hover: $base--icon--color-background-active-hover !default;
+  // $btn--body--border-radious: 50px !default;
+  // $btn--body--max-width: 350px !default;
+
+  //Default local values:
+  $btn--body--paddings: 1rem 2.5rem !default;
+  $small-btn--body--paddings: 0.62rem 1.87rem !default;
+
+  //Component body:
+  @include add-transition;
+  @include add-shadow-box;
+  @include add-com-border;
+  @include add-txt-com-body;
+
+  background-color: $btn--body--color-background;
+  color: $btn--body--color-text;
+  padding: $btn--body--paddings;
+
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:focus {
+    @include add-focus;
+  }
+
+  &:active {
+    @include add-active;
+  }
+
+  &:hover {
+    @include add-shadow-box-hover;
+    color: $btn--body--color-text-hover;
+    background-color: $btn--body--color-background-hover;
+  }
+}

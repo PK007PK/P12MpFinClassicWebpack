@@ -1,0 +1,72 @@
+@mixin add-resp-background(
+  $phone-9x16,
+  $phone-9x16-hi,
+  $phone-9x21,
+  $phone-9x21-hi,
+  $xs-back,
+  $xs-back-hi,
+  $sm-back,
+  $sm-back-hi,
+  $md-back,
+  $md-back-hi,
+  $lg-back,
+  $lg-back-hi
+) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include respond-below(xs) {
+    $condition1: '(min-aspect-ratio: 11/20)';
+    $condition2: '(max-aspect-ratio: 11/20)';
+
+    @media #{$condition2} and (max-resolution: 2.99dppx) {
+      background-image: url($phone-9x21);
+    }
+    @media #{$condition2} and (min-resolution: 3dppx) {
+      background-image: url($phone-9x21-hi);
+    }
+    @media #{$condition1} and (max-resolution: 2.99dppx) {
+      background-image: url($phone-9x16);
+    }
+    @media #{$condition1} and (min-resolution: 3dppx) {
+      background-image: url($phone-9x16-hi);
+    }
+  }
+
+  @include respond-between(xs, sm) {
+    @media (max-resolution: 2.99dppx) {
+      background-image: url($xs-back);
+    }
+    @media (min-resolution: 3dppx) {
+      background-image: url($xs-back-hi);
+    }
+  }
+
+  @include respond-between(sm, md) {
+    @media (max-resolution: 2.99dppx) {
+      background-image: url($sm-back);
+    }
+    @media (min-resolution: 3dppx) {
+      background-image: url($sm-back-hi);
+    }
+  }
+
+  @include respond-between(md, lg) {
+    @media (max-resolution: 2.99dppx) {
+      background-image: url($md-back);
+    }
+    @media (min-resolution: 3dppx) {
+      background-image: url($md-back-hi);
+    }
+  }
+
+  @include respond-above(lg) {
+    @media (max-resolution: 2.99dppx) {
+      background-image: url($lg-back);
+    }
+    @media (min-resolution: 3dppx) {
+      background-image: url($lg-back-hi);
+    }
+  }
+}

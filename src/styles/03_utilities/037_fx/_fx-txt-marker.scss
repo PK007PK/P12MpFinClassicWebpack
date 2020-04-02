@@ -1,0 +1,47 @@
+.fx-txt-marker {
+  font-style: normal;
+  border-radius: 1em 0 1em 0;
+  background-position: 0 50%;
+
+  background-image: linear-gradient(
+    -100deg,
+    rgba(217, 63, 76, 0.15),
+    rgba(217, 63, 76, 0.8) 100%,
+    rgba(217, 63, 76, 0.25)
+  );
+}
+
+.fx-txt-marker2 {
+  @include add-transition;
+  font-style: normal;
+  border-radius: 1em 0 1em 0;
+  background-position: 0 50%;
+
+  background-image: linear-gradient(
+    -100deg,
+    rgba(255, 182, 72, 0.15),
+    rgba(255, 182, 72, 0.8) 100%,
+    rgba(255, 182, 72, 0.25)
+  );
+
+  &:focus {
+    @extend .fx-focus-clean;
+    background-image: linear-gradient(
+      -100deg,
+      rgba(34, 143, 103, 0.15),
+      rgba(34, 143, 103, 0.8) 100%,
+      rgba(34, 143, 103, 0.25)
+    );
+  }
+
+  &--flat {
+    &:hover {
+      background-image: linear-gradient(
+        -100deg,
+        rgba(255, 182, 72, 0.15),
+        rgba(255, 182, 72, 0.8) 100%,
+        rgba(255, 182, 72, 0.25)
+      );
+    }
+  }
+}

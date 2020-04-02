@@ -1,0 +1,71 @@
+/**** Specific project values ****/
+
+/**** Overwrite default variables ****/
+
+/**** Default system variables ****/
+
+// Grid
+$grid-base: 1rem;
+
+// Breakpoints
+$xs-break: 576px;
+$sm-break: 768px;
+$md-break: 992px;
+$lg-break: 1200px;
+$xxl-break: 1450px;
+
+// Map of breakpoints.
+$breakpoints: (
+  xs: $xs-break,
+  sm: $sm-break,
+  md: $md-break,
+  lg: $lg-break,
+  xxl: $xxl-break,
+);
+
+// * Overwrite generic variables ----------------------------
+
+// ** body
+// $body--body--max-wdth: 1600px;
+
+// * Overwrite mixins ----------------------------
+
+// ** _mix-resp-section-padding
+// $tiny-paddings: 50px;
+// $xs-paddings: $tiny-paddings;
+// $sm-paddings: 80px;
+// $md-paddings: $sm-paddings;
+// $lg-paddings: 100px;
+// $xxl-paddings: $lg-paddings;
+
+// ** resp-section-height
+// $mix-section-height--default-tiny--height: 100vh !default;
+// $mix-section-height--default-xs--height: 700px !default;
+// $mix-section-height--default-sm--height: $mix-section-height--default-xs--height !default;
+// $mix-section-height--default-md--height: $mix-section-height--default-sm--height !default;
+// $mix-section-height--default-lg--height: 650px !default;
+// $mix-section-height--default-xxl--height: 600px !default;
+
+// * Overwrite utilities ----------------------------
+
+// ** u-container
+// $containerPadding: $grid-base;
+// $max-width-xs: 540px;
+// $max-width-sm: 720px;
+// $max-width-md: 960px;
+// $max-width-lg: 1184px;
+// $max-width-xxl: 1184px;
+
+// * Overwrite components ----------------------------
+// ** c-side-menu
+// $side-menu--item--padding: 15px !default;
+// $side-menu--icon--size: $grid-base * 2 !default;
+
+// ** c-social-tile
+// $social-tile--body--height: 150px !default;
+// $social-tile--icon--size: $grid-base * 3 !default;
+// $social-tile--body--padding: $grid-base * 2 !default;
+
+// ** c-horizontal-bar
+// $horizontal-bar--body--height: 4px !default;
+// $horizontal-bar--body--max-width: 64px !default;

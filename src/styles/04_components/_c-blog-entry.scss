@@ -1,0 +1,75 @@
+.c-blog-entry {
+  //Overwrite variables:
+
+  //Default main variables:
+  $grid-base: 10px !default;
+
+  //Default local variables:
+  $blog-entry--main--padding: $grid-base !default;
+  $blog-entry--img--size: 75px !default;
+  $blog-entry--img-from-text: $grid-base * 2 !default;
+  $blog-entry--title-from-text: $grid-base !default;
+
+  //Component body:
+  @include add-transition;
+  @include add-shadow-box;
+  // @include add-default-components-border;
+
+  display: flex;
+  align-items: center;
+  padding: $blog-entry--main--padding;
+
+  &:focus {
+    @include add-focus;
+  }
+
+  &:active {
+    @include add-active;
+  }
+
+  &:hover {
+    @include add-shadow-box-hover;
+  }
+
+  &__title {
+    @include add-txt-com-heading;
+    margin-bottom: $blog-entry--title-from-text;
+  }
+
+  &__text {
+    @include add-txt-com-body;
+  }
+
+  &__img {
+    width: $blog-entry--img--size;
+    height: $blog-entry--img--size;
+    flex-shrink: 0;
+  }
+
+  &__container {
+    margin-left: $blog-entry--img-from-text;
+
+    & > * {
+      margin: 0;
+    }
+  }
+}
+
+/*
+
+<div class="c-blog-entry">
+  <img
+    loading="lazy"
+    data-sizes="auto"
+    class="c-blog-entry__img lazyload"
+    src="/src/images/images/placeholder1x1.png"
+    srcset="/src/images/images/placeholder1x1.png"
+    data-srcset="/src/images/images/placeholder1x1.png 300w"
+  />
+  <div class="c-blog-entry__container">
+    <h3 class="c-blog-entry__title">A New Yorker doesn't necessarily come from...</h3>
+    <p class="c-blog-entry__text">2 minutes ago</p>
+  </div>
+</div>
+
+*/

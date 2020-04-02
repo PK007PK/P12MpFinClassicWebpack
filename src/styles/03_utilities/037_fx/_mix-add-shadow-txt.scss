@@ -1,0 +1,3 @@
+@mixin add-shadow-txt($shadow: $default-shadow) {
+  text-shadow: $shadow;
+}

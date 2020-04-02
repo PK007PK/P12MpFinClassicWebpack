@@ -1,0 +1,13 @@
+@mixin add-font-size-in-media-queries($phone, $tablet, $desktop) {
+  @include respond-below(sm) {
+    font-size: $phone;
+  }
+
+  @include respond-between(sm, md) {
+    font-size: $tablet;
+  }
+
+  @include respond-above(md) {
+    font-size: $desktop;
+  }
+}

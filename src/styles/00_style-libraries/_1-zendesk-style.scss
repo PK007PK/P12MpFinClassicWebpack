@@ -1,0 +1,233 @@
+//Product
+$color-green-p: #78a300;
+$color-blue-p: #30aabc;
+$color-pink-p: #e7afa2;
+$color-pinkdark-p: #eb4962;
+$color-red-p: #eb6651;
+$color-orange-p: #f79a3e;
+$color-yellow-p: #efc93d;
+$color-gold-p: #d4ae5e;
+
+//Primary
+$color-grey-800: #2f3941;
+$color-grey-700: #49545c;
+$color-grey-600: #68737d;
+$color-grey-500: #87929d;
+$color-grey-400: #c2c8cc;
+$color-grey-300: #d8dcde;
+$color-grey-200: #e9ebed;
+$color-grey-100: #f8f9f9;
+
+$color-blue-800: #0f3554;
+$color-blue-700: #144a75;
+$color-blue-600: #1f73b7;
+$color-blue-500: #337fbd;
+$color-blue-400: #5293c7;
+$color-blue-300: #adcce4;
+$color-blue-200: #cee2f2;
+$color-blue-100: #edf7ff;
+
+$color-kale-800: #012b30;
+$color-kale-700: #03363d;
+$color-kale-600: #04444d;
+$color-kale-500: #335d63;
+$color-kale-400: #56777a;
+$color-kale-300: #819a9e;
+$color-kale-200: #c1d6d9;
+$color-kale-100: #f5fbfc;
+
+$color-red-800: #681219;
+$color-red-700: #8c232c;
+$color-red-600: #cc3340;
+$color-red-500: #d93f4c;
+$color-red-400: #e35b66;
+$color-red-300: #f5b5ba;
+$color-red-200: #f5d5d8;
+$color-red-100: #fff0f1;
+
+$color-yellow-800: #703b15;
+$color-yellow-700: #ad5e18;
+$color-yellow-600: #ed961c;
+$color-yellow-500: #f5a133;
+$color-yellow-400: #ffb648;
+$color-yellow-300: #fcdba9;
+$color-yellow-200: #fff0db;
+$color-yellow-100: #fff8ed;
+
+//Secondary
+$color-fuschia-600: #a81897;
+$color-fuschia-M600: #a8458c;
+$color-fuschia-400: #d653c2;
+$color-fuschia-M400: #cf62a8;
+
+$color-pink-600: #d42054;
+$color-pink-M600: #b23a5d;
+$color-pink-400: #ec4d63;
+$color-pink-M400: #d57287;
+
+$color-crimson-600: #c72a1c;
+$color-crimson-M600: #b24a3c;
+$color-crimson-400: #e34f32;
+$color-crimson-M400: #cc6c5b;
+
+$color-orange-600: #bf5000;
+$color-orange-M600: #b35827;
+$color-orange-400: #de701d;
+$color-orange-M400: #d4772c;
+
+$color-lemon-600: #ffbb10;
+$color-lemon-M600: #c38f00;
+$color-lemon-400: #ffd424;
+$color-lemon-M400: #e7a500;
+
+$color-lime-600: #2e8200;
+$color-lime-M600: #47782c;
+$color-lime-400: #43b324;
+$color-lime-M400: #519e2d;
+
+$color-mint-600: #058541;
+$color-mint-M600: #2e8057;
+$color-mint-400: #00a656;
+$color-mint-M400: #299c66;
+
+$color-teal-600: #028079;
+$color-teal-M600: #3c7873;
+$color-teal-400: #02a191;
+$color-teal-M400: #2d9e8f;
+
+$color-azure-600: #1371d6;
+$color-azure-M600: #3a70b2;
+$color-azure-400: #3091ec;
+$color-azure-M400: #5f8dcf;
+
+$color-royal-600: #3353e2;
+$color-royal-M600: #4b61c3;
+$color-royal-400: #5d7df5;
+$color-royal-M400: #7986d8;
+
+$color-purple-600: #6a27b8;
+$color-purple-M600: #9358b0;
+$color-purple-400: #b552e2;
+$color-purple-M400: #b072cc;
+
+$colors: (
+  'color-green-p': $color-green-p,
+  'color-blue-p': $color-blue-p,
+  'color-pink-p': $color-pink-p,
+  'color-pinkdark-p': $color-pinkdark-p,
+  'color-red-p': $color-red-p,
+  'color-orange-p': $color-orange-p,
+  'color-yellow-p': $color-yellow-p,
+  'color-gold-p': $color-gold-p,
+  'color-grey-800': $color-grey-800,
+  'color-grey-700': $color-grey-700,
+  'color-grey-600': $color-grey-600,
+  'color-grey-500': $color-grey-500,
+  'color-grey-400': $color-grey-400,
+  'color-grey-300': $color-grey-300,
+  'color-grey-200': $color-grey-200,
+  'color-grey-100': $color-grey-100,
+  'color-blue-800': $color-blue-800,
+  'color-blue-700': $color-blue-700,
+  'color-blue-600': $color-blue-600,
+  'color-blue-500': $color-blue-500,
+  'color-blue-400': $color-blue-400,
+  'color-blue-300': $color-blue-300,
+  'color-blue-200': $color-blue-200,
+  'color-blue-100': $color-blue-100,
+  'color-kale-800': $color-kale-800,
+  'color-kale-700': $color-kale-700,
+  'color-kale-600': $color-kale-600,
+  'color-kale-500': $color-kale-500,
+  'color-kale-400': $color-kale-400,
+  'color-kale-300': $color-kale-300,
+  'color-kale-200': $color-kale-200,
+  'color-kale-100': $color-kale-100,
+  'color-red-800': $color-red-800,
+  'color-red-700': $color-red-700,
+  'color-red-600': $color-red-600,
+  'color-red-500': $color-red-500,
+  'color-red-400': $color-red-400,
+  'color-red-300': $color-red-300,
+  'color-red-200': $color-red-200,
+  'color-red-100': $color-red-100,
+  'color-yellow-800': $color-yellow-800,
+  'color-yellow-700': $color-yellow-700,
+  'color-yellow-600': $color-yellow-600,
+  'color-yellow-500': $color-yellow-500,
+  'color-yellow-400': $color-yellow-400,
+  'color-yellow-300': $color-yellow-300,
+  'color-yellow-200': $color-yellow-200,
+  'color-yellow-100': $color-yellow-100,
+  '$color-fuschia-600': $color-fuschia-600,
+  'color-fuschia-M600': $color-fuschia-M600,
+  'color-fuschia-400': $color-fuschia-400,
+  'color-fuschia-M400': $color-fuschia-M400,
+  'color-pink-600': $color-pink-600,
+  'color-pink-M600': $color-pink-M600,
+  'color-pink-400': $color-pink-400,
+  'color-pink-M400': $color-pink-M400,
+  'color-crimson-600': $color-crimson-600,
+  '$color-crimson-M600': $color-crimson-M600,
+  'color-crimson-400': $color-crimson-400,
+  'olor-crimson-M400': $color-crimson-M400,
+  'color-orange-600': $color-orange-600,
+  'color-orange-M600': $color-orange-M600,
+  'color-orange-400': $color-orange-400,
+  'color-orange-M400': $color-orange-M400,
+  'color-lemon-600': $color-lemon-600,
+  'color-lemon-M600': $color-lemon-M600,
+  'color-lemon-400': $color-lemon-400,
+  'color-lemon-M400': $color-lemon-M400,
+  'color-lime-600': $color-lime-600,
+  'color-lime-M600': $color-lime-M600,
+  'color-lime-400': $color-lime-400,
+  'color-lime-M400': $color-lime-M400,
+  'color-mint-600': $color-mint-600,
+  'color-mint-M600': $color-mint-M600,
+  'color-mint-400': $color-mint-400,
+  'color-mint-M400': $color-mint-M400,
+  'color-teal-600': $color-teal-600,
+  'color-teal-M600': $color-teal-M600,
+  'color-teal-400': $color-teal-400,
+  'color-teal-M400': $color-teal-M400,
+  'color-azure-600': $color-azure-600,
+  'color-azure-M600': $color-azure-M600,
+  'color-azure-400': $color-azure-400,
+  'color-azure-M400': $color-azure-M400,
+  'color-royal-600': $color-royal-600,
+  'color-royal-M600': $color-royal-M600,
+  'color-royal-400': $color-royal-400,
+  'color-royal-M400': $color-royal-M400,
+  'color-purple-600': $color-purple-600,
+  'color-purple-M600': $color-purple-M600,
+  'color-purple-400': $color-purple-400,
+  'color-purple-M400': $color-purple-M400,
+);
+
+$base--focus--color: #edf7ff;
+$base--heading--color-text: #012b30;
+$base--heading--color-text-hover: #335d63;
+$base--heading--color-text-active: #681219;
+$base--heading--color-text-active-hover: #819a9e;
+$base--heading--color-background: #d93f4c;
+$base--heading--color-background-hover: #038153;
+$base-_heading--color-background-active: #144a75;
+$base--heading--color-background-active-hover: #56777a;
+$base--body--color-text: #03363d !default;
+$base--body--color-text-hover: #012b30 !default;
+$base--body--color-text-active: #e9ebed !default;
+$base--body--color-text-active-hover: #f8f9f9 !default;
+$base--body--color-background: #e9ebed !default;
+$base--body--color-background-hover: #c2c8cc !default;
+$base--body--color-background-active: #49545c !default;
+$base--body--color-background-active-hover: #2f3941 !default;
+$base--body--color-border: none !default;
+$base--icon--color-text: #edf8f4 !default;
+$base--icon--color-text-hover: blue !default;
+$base--icon--color-text-active: red !default;
+$base--icon--color-text-active-hover: yellow !default;
+$base--icon--color-background: #c1d6d9 !default;
+$base--icon--color-background-hover: #e9ebed !default;
+$base--icon--color-background-active: #adcce4 !default;
+$base--icon--color-background-active-hover: purple !default;

@@ -1,0 +1,22 @@
+// * Overwrite default values
+
+// * Default variables
+// ** Default main variables
+$default-txt-component-heading--font-family: $base--components-heading--font-family !default;
+$default-txt-component-heading--font-size: $base--components-heading--font-size !default;
+$default-txt-component-heading--font-style: $base--components-heading--font-style !default;
+$default-txt-component-heading--font-weight: $base--components-heading--font-weight !default;
+$default-txt-component-heading--letter-spacing: $base--components-heading--letter-spacing !default;
+$default-txt-component-heading--line-height: $base--components-heading--line-height !default;
+$default-txt-component-heading--text-transform: $base--components-heading--text-transform !default;
+
+// * Mixin
+@mixin add-txt-com-heading() {
+  font-family: $default-txt-component-heading--font-family;
+  font-size: $default-txt-component-heading--font-size;
+  font-style: $default-txt-component-heading--font-style;
+  font-weight: $base--components-heading--font-weight;
+  line-height: $default-txt-component-heading--line-height;
+  letter-spacing: $default-txt-component-heading--letter-spacing;
+  text-transform: $default-txt-component-heading--text-transform;
+}

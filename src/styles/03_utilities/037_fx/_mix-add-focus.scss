@@ -1,0 +1,6 @@
+@mixin add-focus() {
+  border: none !important;
+  color: $base--body--color-text-hover;
+  background-color: $base--body--color-background-hover;
+  outline: 0;
+}

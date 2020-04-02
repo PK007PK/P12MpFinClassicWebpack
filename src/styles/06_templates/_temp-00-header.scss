@@ -1,0 +1,149 @@
+.temp-00-header {
+  position: relative;
+  @include add-section-width;
+
+  z-index: 1;
+
+  &::before {
+    content: '';
+    @include add-resp-background(
+      $phone-9x16: 'images/project-images/temp-00-back--phone-9x16.jpg',
+      $phone-9x16-hi: 'images/project-images/temp-00-back--phone-9x16-hi.jpg',
+      $phone-9x21: 'images/project-images/temp-00-back--phone-9x21.jpg',
+      $phone-9x21-hi: 'images/project-images/temp-00-back--phone-9x21-hi.jpg',
+      $xs-back: 'images/project-images/temp-00-back--xs-back.jpg',
+      $xs-back-hi: 'images/project-images/temp-00-back--xs-back-hi.jpg',
+      $sm-back: 'images/project-images/temp-00-back--sm-back.jpg',
+      $sm-back-hi: 'images/project-images/temp-00-back--sm-back-hi.jpg',
+      $md-back: 'images/project-images/temp-00-back--md-back.jpg',
+      $md-back-hi: 'images/project-images/temp-00-back--md-back-hi.jpg',
+      $lg-back: 'images/project-images/temp-00-back--lg-back.jpg',
+      $lg-back-hi: 'images/project-images/temp-00-back--lg-back-hi.jpg'
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    z-index: -1;
+  }
+
+  &__inner {
+    @include add-resp-height(
+      $tiny-height: 100vh,
+      $tiny-max-height: 820px,
+      $xs-height: 100vh,
+      $xs-max-height: 820px,
+      $sm-height: 100vh,
+      $sm-max-height: 700px,
+      $md-height: 100vh,
+      $md-max-height: 750px,
+      $lg-height: 100vh,
+      $lg-max-height: 750px
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+    .c-top-menu__nav-link {
+      @extend .fx-txt-underline1;
+      font-weight: 800;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__sources {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &__title {
+    @include add-shadow-txt;
+  }
+
+  span {
+    font-weight: 200;
+    text-transform: none;
+    font-size: 2.5rem;
+    color: white;
+    @include add-shadow-txt;
+  }
+
+  &__program {
+    display: none;
+    @include respond-above(md) {
+      display: block;
+      @include add-shadow-box;
+      @include add-shadow-txt;
+      font-size: 1.5rem;
+      font-weight: 800;
+      width: 280px;
+      padding: 10px 20px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    i {
+      margin-right: 20px;
+      color: $color-red;
+    }
+  }
+
+  &__bottom-bar {
+    @include add-font-size-in-media-queries(2rem, 2.5rem, 3rem);
+    @include add-shadow-txt;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    i {
+      color: $color-red;
+    }
+
+    .icon {
+      display: none;
+      @include respond-above(sm) {
+        display: block;
+      }
+      @include add-transition;
+      &:focus {
+        @extend .fx-focus-clean;
+        padding: 0;
+        background-color: inherit;
+
+        & i {
+          @include add-shadow-txt-hover;
+          color: $color-yellow-400;
+        }
+      }
+
+      &:hover {
+        & i {
+          @include add-shadow-txt-hover;
+          color: $color-yellow-400;
+        }
+      }
+    }
+  }
+}

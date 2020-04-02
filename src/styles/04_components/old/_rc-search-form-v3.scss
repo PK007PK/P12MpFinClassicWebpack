@@ -1,0 +1,32 @@
+.c-search-form {
+  // Overvrite defaults
+
+  // Default variables
+  $search-form--body--width: 300px !default;
+
+  // Component body
+  display: flex;
+  justify-content: space-between;
+  width: $search-form--body--width;
+
+  &__field {
+    display: block;
+    width: 100%;
+  }
+
+  &__btn {
+  }
+}
+
+/*
+
+<div class="c-search-form u-bg-color-red">
+  <input
+    class="c-input c-search-form__field"
+    placeholder="Placeholder"
+    type="text"
+  />
+  <button class="c-btn c-search-form__btn">Search</button>
+</div>
+
+*/

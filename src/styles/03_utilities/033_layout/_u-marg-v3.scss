@@ -1,0 +1,153 @@
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+//
+//      .u-marg--(0 to 200, step 5)
+//      .u-marg--(xs sm md lg xxl)-(0 to 200)
+
+//      .u-marg-x--(0 to 200)
+//      .u-marg-x--(xs sm md lg xxl) -(0 to 200)
+
+//      .u-marg-y--(0 to 200)
+//      .u-marg-y--(xs sm md lg xxl) -(0 to 200)
+
+//      .u-marg-t--(0 to 200)
+//      .u-marg-t--(xs sm md lg xxl) -(0 to 200)
+
+//      .u-marg-b--(0 to 200)
+//      .u-marg-b--(xs sm md lg xxl) -(0 to 200)
+
+//      .u-marg-l--(0 to 200)
+//      .u-marg-l--(xs sm md lg xxl) -(0 to 200)
+
+//      .u-marg-r--(0 to 200)
+//      .u-marg-r--(xs sm md lg xxl) -(0 to 200)
+//––––––––––––––––––––––––––––––––––––––––––––––––
+
+@mixin create_margins_classes {
+  $value: 0;
+
+  .u-marg-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  @for $i from 1 through 21 {
+    .u-marg--#{$value} {
+      margin: #{$value}px !important;
+    }
+
+    .u-marg-x--#{$value} {
+      margin-left: #{$value}px !important;
+      margin-right: #{$value}px !important;
+    }
+
+    .u-marg-y--#{$value} {
+      margin-top: #{$value}px !important;
+      margin-bottom: #{$value}px !important;
+    }
+
+    .u-marg-t--#{$value} {
+      margin-top: #{$value}px !important;
+    }
+
+    .u-marg-b--#{$value} {
+      margin-bottom: #{$value}px !important;
+    }
+
+    .u-marg-l--#{$value} {
+      margin-left: #{$value}px !important;
+    }
+
+    .u-marg-r--#{$value} {
+      margin-right: #{$value}px !important;
+    }
+    $value: $value + 5;
+  }
+
+  @each $key, $val in $breakpoints {
+    $value: 0;
+    @for $i from 1 through 21 {
+      .u-marg--#{$key}-#{$value} {
+        @include respond-above($key) {
+          margin: #{$value}px !important;
+        }
+      }
+      $value: $value + 5;
+    }
+  }
+
+  @each $key, $val in $breakpoints {
+    $value: 0;
+    @for $i from 1 through 21 {
+      .u-marg-x--#{$key}-#{$value} {
+        @include respond-above($key) {
+          margin-left: #{$value}px !important;
+          margin-right: #{$value}px !important;
+        }
+      }
+      $value: $value + 5;
+    }
+  }
+
+  @each $key, $val in $breakpoints {
+    $value: 0;
+    @for $i from 1 through 21 {
+      .u-marg-y--#{$key}-#{$value} {
+        @include respond-above($key) {
+          margin-top: #{$value}px !important;
+          margin-bottom: #{$value}px !important;
+        }
+      }
+      $value: $value + 5;
+    }
+  }
+
+  @each $key, $val in $breakpoints {
+    $value: 0;
+    @for $i from 1 through 21 {
+      .u-marg-t--#{$key}-#{$value} {
+        @include respond-above($key) {
+          margin-top: #{$value}px !important;
+        }
+      }
+      $value: $value + 5;
+    }
+  }
+
+  @each $key, $val in $breakpoints {
+    $value: 0;
+    @for $i from 1 through 21 {
+      .u-marg-b--#{$key}-#{$value} {
+        @include respond-above($key) {
+          margin-bottom: #{$value}px !important;
+        }
+      }
+      $value: $value + 5;
+    }
+  }
+
+  @each $key, $val in $breakpoints {
+    $value: 0;
+    @for $i from 1 through 21 {
+      .u-marg-l--#{$key}-#{$value} {
+        @include respond-above($key) {
+          margin-left: #{$value}px !important;
+        }
+      }
+      $value: $value + 5;
+    }
+  }
+
+  @each $key, $val in $breakpoints {
+    $value: 0;
+    @for $i from 1 through 21 {
+      .u-marg-r--#{$key}-#{$value} {
+        @include respond-above($key) {
+          margin-right: #{$value}px !important;
+        }
+      }
+      $value: $value + 5;
+    }
+  }
+}
+
+@include create_margins_classes;

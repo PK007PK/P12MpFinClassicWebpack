@@ -1,0 +1,128 @@
+/**** Specific project values ****/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,800&display=swap');
+
+//Body font
+$primary-font: ('Poppins', sans-serif);
+// $secondary-font: ('Playfair Display', serif);
+
+//Font sizes
+$font-size-small: 1.4rem;
+$font-size-16: 1.6rem;
+$font-size-24: 2.4rem;
+$font-size-36: 3.6rem;
+$font-size-46: 4.6rem;
+
+// Create font-size classes
+$font-sizes: (
+  'font-size-small': $font-size-small,
+  'font-size-16': $font-size-16,
+  'font-size-24': $font-size-24,
+  'font-size-36': $font-size-36,
+  'font-size-46': $font-size-46,
+);
+
+//Font weights
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-800: 800;
+
+// Create font-weight classes
+$font-weights: (
+  'font-weight-300': $font-weight-300,
+  'font-weight-400': $font-weight-400,
+  'font-weight-800': $font-weight-800,
+);
+
+//* body, u-txt-paragraph--primary
+$base--body--font-family: $primary-font;
+$base--body--font-size: 1.6rem;
+$base--body--font-style: normal;
+$base--body--font-weight: 300;
+$base--body--letter-spacing: 0.5px;
+$base--body--line-height: 2.8rem;
+$base--body--text-transform: inherit;
+
+//u-txt-paragraph--secondary
+$base--body-2--font-family: $primary-font;
+$base--body-2--font-size: 1.8rem;
+$base--body-2--font-style: inherit;
+$base--body-2--font-weight: 700;
+$base--body-2--letter-spacing: inherit;
+$base--body-2--line-height: inherit;
+$base--body-2--text-transform: inherit;
+
+//* Navigation
+$base--navi--font-family: $primary-font;
+$base--navi--font-size: 1.4rem;
+$base--navi--font-style: inherit;
+$base--navi--font-weight: 300;
+$base--navi--letter-spacing: inherit;
+$base--navi--line-height: inherit;
+$base--navi--text-transform: inherit;
+
+//* Headings
+//** h1, u-txt-heading-1
+$base--heading-1--font-family: $primary-font;
+$base--heading-1--font-size-phone: 3rem;
+$base--heading-1--font-size-tablet: 4rem;
+$base--heading-1--font-size-desktop: 4.5rem;
+$base--heading-1--line-height: 1.2;
+$base--heading-1--font-weight: 800;
+$base--heading-1--font-style: inherit;
+$base--heading-1--letter-spacing: 0.25px;
+$base--heading-1--text-transform: uppercase;
+
+//** h2, u-txt-heading-2
+$base--heading-2--font-family: $primary-font;
+$base--heading-2--font-size-phone: 3rem;
+$base--heading-2--font-size-tablet: 4rem;
+$base--heading-2--font-size-desktop: 4.5rem;
+$base--heading-2--font-style: inherit;
+$base--heading-2--font-weight: 800;
+$base--heading-2--letter-spacing: -0.5px;
+$base--heading-2--line-height: 5.5rem;
+$base--heading-2--text-transform: inherit;
+
+//** h3, u-txt-heading-3
+$base--heading-3--font-family: $primary-font;
+$base--heading-3--font-size: 3.2rem;
+$base--heading-3--font-style: inherit;
+$base--heading-3--font-weight: 400;
+$base--heading-3--letter-spacing: 0.25px;
+$base--heading-3--line-height: 4.2rem;
+$base--heading-3--text-transform: inherit;
+
+//** h4, u-txt-heading-4
+$base--heading-4--font-family: $primary-font;
+$base--heading-4--font-size: 1.8rem;
+$base--heading-4--font-style: inherit;
+$base--heading-4--font-weight: 700;
+$base--heading-4--letter-spacing: inherit;
+$base--heading-4--line-height: inherit;
+$base--heading-4--text-transform: inherit;
+
+//** h5, u-txt-heading-5
+$base--heading-5--font-family: $primary-font;
+$base--heading-5--font-size: 1.8rem;
+$base--heading-5--font-style: inherit;
+$base--heading-5--font-weight: 700;
+$base--heading-5--letter-spacing: inherit;
+$base--heading-5--line-height: inherit;
+$base--heading-5--text-transform: inherit;
+
+//* Components
+$base--components-heading--font-family: $primary-font;
+$base--components-heading--font-size: 3.2rem;
+$base--components-heading--font-style: inherit;
+$base--components-heading--font-weight: 400;
+$base--components-heading--letter-spacing: 0.25px;
+$base--components-heading--line-height: 4.2rem;
+$base--components-heading--text-transform: inherit;
+
+$base--components-body--font-family: $primary-font;
+$base--components-body--font-size: 1.5rem;
+$base--components-body--font-style: inherit;
+$base--components-body--font-weight: 400;
+$base--components-body--letter-spacing: inherit;
+$base--components-body--line-height: inherit;
+$base--components-body--text-transform: inherit;

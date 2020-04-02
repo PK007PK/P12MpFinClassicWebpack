@@ -1,0 +1,23 @@
+.temp-01-o-mnie {
+  &__inner {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover .layout1__decor {
+      opacity: 0.95;
+    }
+  }
+
+  .layout1__decor {
+    @include add-transition;
+    background: linear-gradient(
+        rgba(182, 64, 64, 0.1) 70%,
+        rgba(182, 64, 64, 0.1)
+      ),
+      url('images/project-images/temp-01-pict.jpg');
+    opacity: 0.7;
+  }
+}

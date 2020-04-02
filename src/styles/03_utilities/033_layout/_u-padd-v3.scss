@@ -1,0 +1,134 @@
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+//  Create:
+//      .u-padd u-padd--(xs sm md lg)--(0 to 41)
+//      .u-padd-x u-padd-x--(xs sm md lg) --(0 to 41)
+//      .u-padd-y u-padd-y--(xs sm md lg) --(0 to 41)
+//      .u-padd-t u-padd-t--(xs sm md lg) --(0 to 41)
+//      .u-padd-b u-padd-b--(xs sm md lg) --(0 to 41)
+//      .u-padd-l u-padd-l--(xs sm md lg) --(0 to 41)
+//      .u-padd-r u-padd-r--(xs sm md lg) --(0 to 41)
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@mixin create_padding_classes {
+  $value: 0;
+  @for $i from 1 through 21 {
+    .u-padd--#{$value} {
+      padding: #{$value}px;
+    }
+
+    .u-padd-x--#{$value} {
+      padding-left: #{$value}px;
+      padding-right: #{$value}px;
+    }
+
+    .u-padd-y--#{$value} {
+      padding-top: #{$value}px;
+      padding-bottom: #{$value}px;
+    }
+
+    .u-padd-t--#{$value} {
+      padding-top: #{$value}px;
+    }
+
+    .u-padd-b--#{$value} {
+      padding-bottom: #{$value}px;
+    }
+
+    .u-padd-l--#{$value} {
+      padding-left: #{$value}px;
+    }
+
+    .u-padd-r--#{$value} {
+      padding-right: #{$value}px;
+    }
+    $value: $value + 5;
+  }
+
+  @each $key, $val in $breakpoints {
+    $value: 0;
+    @for $i from 1 through 21 {
+      .u-padd--#{$key}-#{$value} {
+        @include respond-above($key) {
+          padding: #{$value}px !important;
+        }
+      }
+      $value: $value + 5;
+    }
+  }
+
+  @each $key, $val in $breakpoints {
+    $value: 0;
+    @for $i from 1 through 21 {
+      .u-padd-x--#{$key}-#{$value} {
+        @include respond-above($key) {
+          padding-left: #{$value}px !important;
+          padding-right: #{$value}px !important;
+        }
+      }
+      $value: $value + 5;
+    }
+  }
+
+  @each $key, $val in $breakpoints {
+    $value: 0;
+    @for $i from 1 through 21 {
+      .u-padd-y--#{$key}-#{$value} {
+        @include respond-above($key) {
+          padding-top: #{$value}px !important;
+          padding-bottom: #{$value}px !important;
+        }
+      }
+      $value: $value + 5;
+    }
+  }
+
+  @each $key, $val in $breakpoints {
+    $value: 0;
+    @for $i from 1 through 21 {
+      .u-padd-t--#{$key}-#{$value} {
+        @include respond-above($key) {
+          padding-top: #{$value}px !important;
+        }
+      }
+      $value: $value + 5;
+    }
+  }
+
+  @each $key, $val in $breakpoints {
+    $value: 0;
+    @for $i from 1 through 21 {
+      .u-padd-b--#{$key}-#{$value} {
+        @include respond-above($key) {
+          padding-bottom: #{$value}px !important;
+        }
+      }
+      $value: $value + 5;
+    }
+  }
+
+  @each $key, $val in $breakpoints {
+    $value: 0;
+    @for $i from 1 through 21 {
+      .u-padd-l--#{$key}-#{$value} {
+        @include respond-above($key) {
+          padding-left: #{$value}px !important;
+        }
+      }
+      $value: $value + 5;
+    }
+  }
+
+  @each $key, $val in $breakpoints {
+    $value: 0;
+    @for $i from 1 through 21 {
+      .u-padd-r--#{$key}-#{$value} {
+        @include respond-above($key) {
+          padding-right: #{$value}px !important;
+        }
+      }
+      $value: $value + 5;
+    }
+  }
+}
+
+@include create_padding_classes;

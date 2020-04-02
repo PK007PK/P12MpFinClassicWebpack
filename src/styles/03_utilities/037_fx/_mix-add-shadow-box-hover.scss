@@ -1,0 +1,3 @@
+@mixin add-shadow-box-hover($shadow: $default-shadow-hover) {
+  box-shadow: $shadow;
+}

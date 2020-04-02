@@ -1,0 +1,26 @@
+.temp-04-kontakt {
+  &__inner {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover .layout1__decor {
+      opacity: 0.95;
+    }
+  }
+
+  .layout1__decor {
+    @include add-transition;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 600px;
+    background: linear-gradient(
+        rgba(182, 64, 64, 0.1) 70%,
+        rgba(182, 64, 64, 0.1)
+      ),
+      url('images/project-images/temp-04-pict.jpg');
+    opacity: 0.7;
+  }
+}

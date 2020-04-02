@@ -1,0 +1,130 @@
+/**** Specific project values: ****/
+
+//Colors
+$color-black: rgb(0, 0, 0);
+$color-white: rgb(254, 254, 254);
+$color-lightGreen: #56ccc8;
+$color-blue: #4d6baa;
+$color-darkBlue: #152840;
+$color-lightBlue: #4fc6f8;
+$color-red: #ea6060;
+$color-gray: #b2b9bd;
+$color-darkGray: #787878;
+$color-lightGray: #dde2e4;
+$color-stellBlue: #506782;
+$color-grayBlack: #475055;
+$color-gplus: #ea6060;
+
+$colors: (
+  'color-black': $color-black,
+  'color-white': $color-white,
+  'color-lightGreen': $color-lightGreen,
+  'color-blue': $color-blue,
+  'color-darkBlue': $color-darkBlue,
+  'color-lightBlue': $color-lightBlue,
+  'color-red': $color-red,
+  'color-gray': $color-gray,
+  'color-darkGray': $color-darkGray,
+  'color-lightGray': $color-lightGray,
+  'color-stellBlue': $color-stellBlue,
+  'color-grayBlack': $color-grayBlack,
+  'color-gplus': $color-gplus,
+);
+
+$default-components-border: none;
+
+// * Overwrite generic variables:
+
+// ** body
+$body--body--color-background: $color-grey-700;
+// $body--body--color: $color-gray;
+
+// ** headings + u-heading
+$headings--h1--color: white;
+$headings--h2--color: white;
+$headings--h3--color: inherit;
+$headings--h4--color: inherit;
+$headings--h5--color: inherit;
+
+// ** paragraph (p and u-txt-paragraph--primary);
+// $text--p--color: inherit;
+
+// * Overwrite utilities variables:
+
+// ** u-txt-component
+// $txt-component--text--color: inherit;
+
+// ** u-txt-logo
+// $txt-logo--text--color: inherit;
+
+// ** u-txt-navigation
+// $txt-navigation--text--color: inherit;
+
+// ** u-txt-paragraph--primary like generic p.
+
+// ** u-txt-paragraph--secondary
+// $txt-paragraph--sec--color: inherit;
+
+// * Overwrite components main variables:
+
+// ** c-accordion v4
+// $accordion--body--color-text: ...;
+// $accordion--body--color-text-hover: ...;
+// $accordion--body--color-text-active: ...;
+// $accordion--body--color-text-active-hover: ...;
+// $accordion--body--color-background: ...;
+// $accordion--body--color-background-hover: ...;
+// $accordion--body--color-background-active: ...;
+// $accordion--body--color-background-active-hover: ...;
+// $accordion--icon--color-background: ...;
+// $accordion--icon--color-background-hover: ...;
+// $accordion--icon--color-background-active: ...;
+
+// ** c-btn
+// $btn--text--color: #ffffff;
+// $btn--body--color: #212121;
+
+// ** c-icon
+// $icon--background--color;
+// $icon--image--color: white;
+
+// ** c-input
+// $input--placeholder--color: white !default;
+// $input--background--color: black !default;
+// $input--border--color: black !default;
+
+// ** c-side-contact
+// $side-contact--text-color: $dark-color !default;
+// $side-contact--icon-color: $side-contact--text-color !default;
+// $side-contact--component-color: $light-color !default;
+
+// ** c-side-menu
+// $side-menu--item--color-background: $light-color !default;
+// $side-menu--item--color-background-active: $active-light-color !default;
+// $side-menu--item--color-background-hover: $side-menu--item--color-background-active !default;
+//
+// $side-menu--text--color: $dark-color !default;
+// $side-menu--text--color-hover: $active-dark-color !default;
+// $side-menu--text--color-active: $side-menu--text--color-hover !default;
+//
+// $side-menu--icon--color: $dark-color !default;
+// $side-menu--icon--color-active: $active-dark-color !default;
+// $side-menu--icon--color-hover: $active-dark-color !default;
+
+// ** c-social-tile
+// $social-tile--body--color-background: $dark-color !default;
+// $social-tile--text--color: $light-color !default;
+
+// ** c-tabs
+// $tabs--button--color: $dark-color !default;
+// $tabs--button--color-hover: $light-color !default;
+// $tabs--button--color-active: $light-color !default;
+// $tabs--button--color-background: $active-light-color !default;
+// $tabs--button--color-background-hover: $medium-color !default;
+// $tabs--button--color-background-active: $medium-color !default;
+
+// $tabs--content--color: $dark-color !default;
+// $tabs--content--color-background: $light-color !default;
+
+// ** c-horizontal-bar
+// $horizontal-bar--body--color-background: $medium-color !default;
