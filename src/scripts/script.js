@@ -6,10 +6,10 @@ HandleBurgerMenu();
 AddSmScrollToMainMenu();
 BackgroundLazyLoad();
 
-import AOS from 'aos';
-AOS.init({
-  startEvent: 'load',
-});
+// import AOS from 'aos';
+// AOS.init({
+//   startEvent: 'load',
+// });
 
 // *** Siema
 // const prev = document.querySelector('.prev');

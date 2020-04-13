@@ -28,4 +28,17 @@
       url('images/project-images/temp-03-pict.jpg');
     opacity: 0.7;
   }
+
+  .layout1__code {
+    @include respond-above(md) {
+      background: url('images/project-images/mirr.svg');
+      background-repeat: no-repeat;
+      opacity: 0.25;
+      width: 550px;
+      height: 110px;
+      background-position: center;
+      left: 600px;
+      top: 0px;
+    }
+  }
 }
