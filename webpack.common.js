@@ -78,76 +78,7 @@ module.exports = {
         removeScriptTypeAttributes: true,
       },
     }),
-    // new HtmlWebpackPlugin({
-    //   title: 'Project: project',
-    //   filename: 'project.html',
-    //   template: './src/project.html',
-    //   inject: 'head',
-    //   favicon: './src/images/favicon.ico',
-    //   minify: {
-    //     removeScriptTypeAttributes: true,
-    //   },
-    // }),
-    new HtmlWebpackPlugin({
-      title: 'Site boilerplate: typography',
-      filename: 'typography.html',
-      template: './src/typography.html',
-      inject: 'head',
-      favicon: './src/images/favicon.ico',
-      minify: {
-        removeScriptTypeAttributes: true,
-      },
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Site boilerplate: components',
-      filename: 'components.html',
-      template: './src/components.html',
-      inject: 'head',
-      favicon: './src/images/favicon.ico',
-      minify: {
-        removeScriptTypeAttributes: true,
-      },
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Site boilerplate: images',
-      filename: 'images.html',
-      template: './src/images.html',
-      inject: 'head',
-      favicon: './src/images/favicon.ico',
-      minify: {
-        removeScriptTypeAttributes: true,
-      },
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Site boilerplate: section templates',
-      filename: 'sectiontemplates.html',
-      template: './src/sectiontemplates.html',
-      inject: 'head',
-      favicon: './src/images/favicon.ico',
-      minify: {
-        removeScriptTypeAttributes: true,
-      },
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Site boilerplate: lazy background',
-      filename: 'lazybackground.html',
-      template: './src/lazybackground.html',
-      inject: 'head',
-      favicon: './src/images/favicon.ico',
-      minify: {
-        removeScriptTypeAttributes: true,
-      },
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Site boilerplate: screens',
-      filename: 'screens.html',
-      template: './src/screens.html',
-      inject: 'head',
-      favicon: './src/images/favicon.ico',
-      minify: {
-        removeScriptTypeAttributes: true,
-      },
-    }),
+
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'defer',
     }),
